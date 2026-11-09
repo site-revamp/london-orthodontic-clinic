@@ -1,0 +1,3064 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>London Orthodontic Clinic | Your Invisalign Smile Journey</title>
+  <meta name="description" content="Discover Invisalign treatment at London Orthodontic Clinic's Central London Experience Studio. Meet our team and book your smile consultation at 257 City Road.">
+  <meta name="theme-color" content="#FF6842">
+  <link rel="canonical" href="https://www.londonorthodonticclinic.com/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --coral: #FF6842;
+      --coral-dark: #e95735;
+      --sage: #7D9582;
+      --sage-dark: #536b59;
+      --cream: #FBF8F4;
+      --warm-white: #FFFCF9;
+      --ink: #242c28;
+      --muted: #68716b;
+      --line: #e9e7e1;
+      --white: #ffffff;
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: "DM Sans", sans-serif;
+      --heading: "Manrope", sans-serif;
+      --container: 1200px;
+      --shadow: 0 18px 50px rgba(36, 44, 40, .09);
+      --header-height: 78px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 150px;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--warm-white);
+      font-family: var(--sans);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button:focus-visible,
+    a:focus-visible,
+    input:focus-visible,
+    textarea:focus-visible {
+      outline: 3px solid var(--coral);
+      outline-offset: 4px;
+    }
+
+    .container {
+      width: min(var(--container), calc(100% - 48px));
+      margin-inline: auto;
+    }
+
+    .section {
+      padding: 105px 0;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 18px;
+      color: var(--sage-dark);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 25px;
+      height: 2px;
+      background: var(--coral);
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin: 0 auto 20px;
+      font-family: var(--heading);
+      font-size: clamp(34px, 5vw, 57px);
+      font-weight: 600;
+      line-height: 1.12;
+      letter-spacing: -.055em;
+    }
+
+    .section-intro {
+      max-width: 610px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .text-center .eyebrow {
+      justify-content: center;
+    }
+
+    .accent {
+      color: var(--coral);
+      font-family: var(--serif);
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      min-height: 54px;
+      padding: 0 25px;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      background: var(--coral);
+      color: var(--white);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .015em;
+      transition: background .25s ease, transform .25s ease, box-shadow .25s ease;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background: var(--coral-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(255, 104, 66, .2);
+    }
+
+    .button-dark {
+      background: var(--ink);
+    }
+
+    .button-dark:hover {
+      background: var(--sage-dark);
+    }
+
+    .button-outline {
+      color: var(--ink);
+      background: transparent;
+      border-color: rgba(36, 44, 40, .25);
+    }
+
+    .button-outline:hover {
+      color: var(--white);
+      background: var(--ink);
+      border-color: var(--ink);
+    }
+
+    .arrow {
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    /* =========================================
+       COMPLETE STICKY HEADER
+       Both announcement and navigation are
+       contained inside this single sticky shell.
+    ========================================== */
+
+    .header-shell {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+      background: var(--white);
+      box-shadow: 0 5px 24px rgba(36, 44, 40, .055);
+    }
+
+    .announcement {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 35px;
+      padding: 7px 20px;
+      background: var(--ink);
+      color: var(--white);
+      text-align: center;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .04em;
+    }
+
+    .announcement a {
+      margin-left: 7px;
+      color: #ffc0ae;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .site-header {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      background: var(--white);
+      border-bottom: 1px solid rgba(36, 44, 40, .07);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: var(--header-height);
+      gap: 28px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      flex-shrink: 0;
+    }
+
+    .brand-symbol {
+      display: grid;
+      width: 43px;
+      height: 43px;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--coral);
+      color: var(--white);
+      font-family: var(--serif);
+      font-size: 25px;
+      font-style: italic;
+    }
+
+    .brand-name {
+      display: block;
+      font-family: var(--heading);
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -.04em;
+    }
+
+    .brand-subtitle {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .primary-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(16px, 2.2vw, 31px);
+      margin-left: auto;
+    }
+
+    .primary-nav a {
+      position: relative;
+      padding: 10px 0;
+      color: #454d48;
+      font-size: 12px;
+      font-weight: 700;
+      transition: color .2s ease;
+    }
+
+    .primary-nav a::after {
+      position: absolute;
+      right: 0;
+      bottom: 3px;
+      left: 0;
+      height: 2px;
+      background: var(--coral);
+      content: "";
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .2s ease;
+    }
+
+    .primary-nav a:hover {
+      color: var(--coral-dark);
+    }
+
+    .primary-nav a:hover::after {
+      transform: scaleX(1);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-shrink: 0;
+    }
+
+    .header-phone {
+      color: var(--ink);
+      font-size: 12px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .header-actions .button {
+      min-height: 45px;
+      padding-inline: 17px;
+      font-size: 11px;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      padding: 10px;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      background: var(--white);
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 21px;
+      height: 2px;
+      margin: 5px auto;
+      background: var(--ink);
+      transition: transform .2s ease, opacity .2s ease;
+    }
+
+    .menu-toggle[aria-expanded="true"] span:first-child {
+      transform: translateY(3.5px) rotate(45deg);
+    }
+
+    .menu-toggle[aria-expanded="true"] span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-toggle[aria-expanded="true"] span:last-child {
+      transform: translateY(-10.5px) rotate(-45deg);
+    }
+
+    /* =========================================
+       HERO
+    ========================================== */
+
+    .hero {
+      position: relative;
+      display: flex;
+      align-items: center;
+      min-height: 660px;
+      padding: 75px 0 85px;
+      overflow: hidden;
+      background: var(--cream);
+    }
+
+    .hero::before {
+      position: absolute;
+      top: -200px;
+      right: -130px;
+      width: 650px;
+      height: 650px;
+      border: 1px solid rgba(125, 149, 130, .2);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .hero::after {
+      position: absolute;
+      top: -105px;
+      right: -35px;
+      width: 460px;
+      height: 460px;
+      border: 1px solid rgba(255, 104, 66, .17);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr .92fr;
+      align-items: center;
+      gap: 70px;
+    }
+
+    .hero-copy {
+      max-width: 600px;
+    }
+
+    .hero h1 {
+      margin: 0 0 25px;
+      font-family: var(--heading);
+      font-size: clamp(48px, 6.4vw, 78px);
+      font-weight: 600;
+      line-height: 1.02;
+      letter-spacing: -.07em;
+    }
+
+    .hero h1 .accent {
+      color: var(--coral);
+    }
+
+    .hero-description {
+      max-width: 480px;
+      margin: 0 0 30px;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 13px;
+    }
+
+    .hero-note {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      margin-top: 32px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .hero-note-mark {
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 50%;
+      background: rgba(125, 149, 130, .17);
+      color: var(--sage-dark);
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 475px;
+    }
+
+    .hero-photo {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 82%;
+      height: 455px;
+      overflow: hidden;
+      border-radius: 48% 48% 8px 8px;
+      background: #e7e4dc;
+    }
+
+    .hero-photo img {
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .hero-stamp {
+      position: absolute;
+      right: -10px;
+      bottom: 12px;
+      display: grid;
+      width: 142px;
+      height: 142px;
+      place-items: center;
+      padding: 20px;
+      border: 8px solid var(--cream);
+      border-radius: 50%;
+      background: var(--coral);
+      color: var(--white);
+      text-align: center;
+      transform: rotate(8deg);
+    }
+
+    .hero-stamp strong {
+      display: block;
+      font-family: var(--heading);
+      font-size: 27px;
+      line-height: 1;
+    }
+
+    .hero-stamp span {
+      display: block;
+      margin-top: 8px;
+      font-size: 9px;
+      font-weight: 700;
+      line-height: 1.35;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .hero-floating-note {
+      position: absolute;
+      bottom: 65px;
+      left: -15px;
+      max-width: 190px;
+      padding: 18px 20px;
+      border: 1px solid rgba(36, 44, 40, .06);
+      border-radius: 5px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-floating-note strong {
+      display: block;
+      font-family: var(--heading);
+      font-size: 14px;
+    }
+
+    .hero-floating-note span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 10px;
+    }
+
+    /* =========================================
+       TRUST STRIP
+       FIX: text rules are scoped to the text
+       wrapper (> div) so they no longer override
+       the .trust-icon circle.
+    ========================================== */
+
+    .trust-strip {
+      padding: 27px 0;
+      background: var(--white);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 13px;
+      min-width: 0;
+    }
+
+    .trust-icon {
+      display: grid;
+      place-items: center;
+      width: 37px;
+      height: 37px;
+      flex: 0 0 37px;
+      margin: 0;
+      border-radius: 50%;
+      background: #f5eee9;
+      color: var(--coral);
+      font-size: 17px;
+      line-height: 1;
+    }
+
+    .trust-item > div strong {
+      display: block;
+      font-size: 12px;
+      line-height: 1.3;
+    }
+
+    .trust-item > div span {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 10px;
+    }
+
+    /* =========================================
+       INTRODUCTION / EXPERIENCE
+    ========================================== */
+
+    .experience {
+      background: var(--warm-white);
+    }
+
+    .experience-grid {
+      display: grid;
+      grid-template-columns: .9fr 1fr;
+      align-items: center;
+      gap: 95px;
+    }
+
+    .experience-visual {
+      position: relative;
+      min-height: 500px;
+    }
+
+    .experience-main-image {
+      width: 83%;
+      height: 475px;
+      overflow: hidden;
+      border-radius: 5px;
+      background: #e8e5dd;
+    }
+
+    .experience-main-image img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .experience-small-image {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 43%;
+      height: 230px;
+      overflow: hidden;
+      border: 9px solid var(--warm-white);
+      border-radius: 5px;
+      background: #e8e5dd;
+    }
+
+    .experience-small-image img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .experience-number {
+      position: absolute;
+      top: 25px;
+      right: 0;
+      color: var(--coral);
+      font-family: var(--serif);
+      font-size: 82px;
+      line-height: 1;
+    }
+
+    .experience-copy h2 {
+      margin: 0 0 22px;
+      font-family: var(--heading);
+      font-size: clamp(36px, 4.5vw, 56px);
+      font-weight: 600;
+      line-height: 1.1;
+      letter-spacing: -.055em;
+    }
+
+    .experience-copy > p:not(.eyebrow) {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .feature-list {
+      display: grid;
+      gap: 13px;
+      margin: 27px 0 32px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .feature-list li::before {
+      display: grid;
+      width: 21px;
+      height: 21px;
+      flex: 0 0 21px;
+      place-items: center;
+      border-radius: 50%;
+      background: rgba(125, 149, 130, .17);
+      color: var(--sage-dark);
+      content: "✓";
+      font-size: 11px;
+    }
+
+    /* =========================================
+       TECHNOLOGY FEATURE
+    ========================================== */
+
+    .technology {
+      position: relative;
+      overflow: hidden;
+      background: var(--sage-dark);
+      color: var(--white);
+    }
+
+    .technology::after {
+      position: absolute;
+      top: -230px;
+      right: -170px;
+      width: 600px;
+      height: 600px;
+      border: 1px solid rgba(255, 255, 255, .13);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .technology-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 90px;
+    }
+
+    .technology h2 {
+      margin: 0 0 22px;
+      font-family: var(--heading);
+      font-size: clamp(37px, 4.6vw, 57px);
+      font-weight: 600;
+      line-height: 1.1;
+      letter-spacing: -.06em;
+    }
+
+    .technology p {
+      color: rgba(255, 255, 255, .78);
+      font-size: 15px;
+    }
+
+    .technology .eyebrow {
+      color: #f4c3b5;
+    }
+
+    .technology .button {
+      margin-top: 18px;
+      background: var(--coral);
+    }
+
+    .technology-visual {
+      position: relative;
+      min-height: 390px;
+    }
+
+    .technology-visual img {
+      position: absolute;
+      inset: 0;
+      height: 390px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .technology-label {
+      position: absolute;
+      right: -20px;
+      bottom: -25px;
+      max-width: 220px;
+      padding: 22px 24px;
+      background: var(--white);
+      color: var(--ink);
+      box-shadow: var(--shadow);
+    }
+
+    .technology-label strong {
+      display: block;
+      font-family: var(--heading);
+      font-size: 16px;
+    }
+
+    .technology-label span {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    /* =========================================
+       SIX ICON CARE GRID
+    ========================================== */
+
+    .care-section {
+      background: var(--cream);
+    }
+
+    .care-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      margin-top: 65px;
+      border-top: 1px solid var(--line);
+      border-left: 1px solid var(--line);
+    }
+
+    .care-item {
+      min-height: 220px;
+      padding: 34px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      transition: background .25s ease;
+    }
+
+    .care-item:hover {
+      background: var(--white);
+    }
+
+    .care-icon {
+      width: 44px;
+      height: 44px;
+      margin-bottom: 23px;
+      color: var(--coral);
+    }
+
+    .care-icon svg {
+      width: 100%;
+      height: 100%;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .care-item h3 {
+      margin: 0 0 9px;
+      font-family: var(--heading);
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    .care-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* =========================================
+       TREATMENTS
+    ========================================== */
+
+    .treatments {
+      background: var(--warm-white);
+    }
+
+    .treatment-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 55px;
+    }
+
+    .treatment-card {
+      position: relative;
+      min-height: 310px;
+      padding: 31px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: var(--white);
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+
+    .treatment-card:hover {
+      transform: translateY(-7px);
+      box-shadow: var(--shadow);
+    }
+
+    .treatment-card::after {
+      position: absolute;
+      right: -35px;
+      bottom: -55px;
+      width: 155px;
+      height: 155px;
+      border: 1px solid rgba(255, 104, 66, .2);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .treatment-index {
+      display: block;
+      margin-bottom: 35px;
+      color: var(--coral);
+      font-family: var(--serif);
+      font-size: 36px;
+    }
+
+    .treatment-card h3 {
+      margin: 0 0 13px;
+      font-family: var(--heading);
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -.04em;
+    }
+
+    .treatment-card p {
+      max-width: 300px;
+      margin: 0 0 25px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .treatment-link {
+      position: relative;
+      z-index: 1;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--coral-dark);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    /* =========================================
+       PATIENT JOURNEY
+    ========================================== */
+
+    .journey {
+      background: #f2f1eb;
+    }
+
+    .journey-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 60px;
+    }
+
+    .journey-step {
+      position: relative;
+      padding-top: 24px;
+      border-top: 2px solid rgba(125, 149, 130, .5);
+    }
+
+    .journey-step-number {
+      display: grid;
+      width: 46px;
+      height: 46px;
+      margin-bottom: 24px;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--sage);
+      color: var(--white);
+      font-family: var(--heading);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .journey-step h3 {
+      margin: 0 0 10px;
+      font-family: var(--heading);
+      font-size: 18px;
+    }
+
+    .journey-step p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* =========================================
+       CLINIC TEAM / TRUST
+    ========================================== */
+
+    .team-section {
+      background: var(--warm-white);
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: 1fr .9fr;
+      align-items: center;
+      gap: 80px;
+    }
+
+    .team-photo {
+      height: 480px;
+      overflow: hidden;
+      border-radius: 5px;
+      background: #e9e5df;
+    }
+
+    .team-photo img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .team-copy h2 {
+      margin: 0 0 22px;
+      font-family: var(--heading);
+      font-size: clamp(35px, 4.4vw, 53px);
+      font-weight: 600;
+      line-height: 1.1;
+      letter-spacing: -.06em;
+    }
+
+    .team-copy p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .team-proof {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin: 30px 0;
+    }
+
+    .team-proof-item {
+      padding: 20px;
+      background: var(--cream);
+    }
+
+    .team-proof-item strong {
+      display: block;
+      color: var(--coral-dark);
+      font-family: var(--heading);
+      font-size: 28px;
+      line-height: 1.2;
+    }
+
+    .team-proof-item span {
+      display: block;
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    /* =========================================
+       CONSULTATION CTA
+    ========================================== */
+
+    .consultation {
+      position: relative;
+      padding: 95px 0;
+      overflow: hidden;
+      background: var(--coral);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .consultation::before,
+    .consultation::after {
+      position: absolute;
+      width: 350px;
+      height: 350px;
+      border: 1px solid rgba(255, 255, 255, .22);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .consultation::before {
+      top: -230px;
+      left: -110px;
+    }
+
+    .consultation::after {
+      right: -100px;
+      bottom: -250px;
+    }
+
+    .consultation .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .consultation .eyebrow {
+      color: rgba(255, 255, 255, .8);
+      justify-content: center;
+    }
+
+    .consultation .eyebrow::before {
+      background: var(--white);
+    }
+
+    .consultation h2 {
+      max-width: 780px;
+      margin: 0 auto 20px;
+      font-family: var(--heading);
+      font-size: clamp(38px, 5vw, 61px);
+      font-weight: 600;
+      line-height: 1.08;
+      letter-spacing: -.06em;
+    }
+
+    .consultation p {
+      max-width: 570px;
+      margin: 0 auto 30px;
+      color: rgba(255, 255, 255, .87);
+      font-size: 15px;
+    }
+
+    .consultation .button {
+      background: var(--white);
+      color: var(--ink);
+    }
+
+    .consultation .button:hover {
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    /* =========================================
+       FAQ
+    ========================================== */
+
+    .faq-section {
+      background: var(--cream);
+    }
+
+    .faq-layout {
+      display: grid;
+      grid-template-columns: .75fr 1.25fr;
+      gap: 85px;
+    }
+
+    .faq-heading h2 {
+      margin: 0 0 18px;
+      font-family: var(--heading);
+      font-size: clamp(36px, 4.5vw, 53px);
+      font-weight: 600;
+      line-height: 1.1;
+      letter-spacing: -.055em;
+    }
+
+    .faq-heading p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .faq-list {
+      border-top: 1px solid var(--line);
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .faq-question {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 22px 0;
+      border: 0;
+      background: transparent;
+      color: var(--ink);
+      text-align: left;
+      font-size: 14px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .faq-plus {
+      display: grid;
+      width: 28px;
+      height: 28px;
+      flex: 0 0 28px;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--white);
+      color: var(--coral);
+      font-size: 19px;
+      transition: transform .2s ease;
+    }
+
+    .faq-question[aria-expanded="true"] .faq-plus {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      display: none;
+      max-width: 650px;
+      padding: 0 35px 22px 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .faq-answer.is-open {
+      display: block;
+    }
+
+    /* =========================================
+       LOCATION / CONTACT DETAILS
+       FIX: text rules are scoped to the text
+       wrapper (> div) and the icon is hardened
+       with grid centering and SVG sizing.
+    ========================================== */
+
+    .visit-section {
+      background: var(--warm-white);
+    }
+
+    .visit-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+    }
+
+    .visit-copy h2 {
+      margin: 0 0 20px;
+      font-family: var(--heading);
+      font-size: clamp(36px, 4.4vw, 53px);
+      font-weight: 600;
+      line-height: 1.1;
+      letter-spacing: -.06em;
+    }
+
+    .visit-copy > p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .visit-details {
+      display: grid;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .visit-detail {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .visit-detail-icon {
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      flex: 0 0 38px;
+      margin: 0;
+      border-radius: 50%;
+      background: #f6e9e3;
+      color: var(--coral-dark);
+      line-height: 1;
+    }
+
+    .visit-detail-icon svg {
+      display: block;
+      width: 18px;
+      height: 18px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .visit-detail > div strong {
+      display: block;
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
+    .visit-detail > div span {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .opening-hours {
+      width: 100%;
+      margin-top: 30px;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+
+    .opening-hours td {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .opening-hours td:last-child {
+      text-align: right;
+      font-weight: 700;
+    }
+
+    .map-panel {
+      position: relative;
+      min-height: 480px;
+      overflow: hidden;
+      border-radius: 5px;
+      background: #e8ece5;
+    }
+
+    .map-panel iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 480px;
+      border: 0;
+    }
+
+    .map-caption {
+      position: absolute;
+      right: 18px;
+      bottom: 18px;
+      left: 18px;
+      padding: 18px 20px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .map-caption strong {
+      display: block;
+      font-family: var(--heading);
+      font-size: 14px;
+    }
+
+    .map-caption span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    /* =========================================
+       FINAL CTA AND FOOTER
+    ========================================== */
+
+    .final-cta {
+      padding: 65px 0;
+      background: var(--sage-dark);
+      color: var(--white);
+    }
+
+    .final-cta-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .final-cta h2 {
+      max-width: 650px;
+      margin: 0;
+      font-family: var(--heading);
+      font-size: clamp(30px, 4vw, 45px);
+      font-weight: 600;
+      line-height: 1.12;
+      letter-spacing: -.05em;
+    }
+
+    .final-cta .button {
+      flex-shrink: 0;
+    }
+
+    .site-footer {
+      padding: 65px 0 25px;
+      background: #202823;
+      color: var(--white);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr .8fr .8fr 1fr;
+      gap: 50px;
+      padding-bottom: 50px;
+    }
+
+    .footer-brand .brand-name {
+      color: var(--white);
+    }
+
+    .footer-brand .brand-subtitle {
+      color: rgba(255, 255, 255, .55);
+    }
+
+    .footer-brand p {
+      max-width: 270px;
+      margin-top: 22px;
+      color: rgba(255, 255, 255, .62);
+      font-size: 12px;
+    }
+
+    .footer-column h3 {
+      margin: 0 0 19px;
+      color: #f6b8a7;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .footer-column a,
+    .footer-column p {
+      display: block;
+      margin: 0 0 12px;
+      color: rgba(255, 255, 255, .7);
+      font-size: 12px;
+      transition: color .2s ease;
+    }
+
+    .footer-column a:hover {
+      color: var(--white);
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255, 255, 255, .12);
+      color: rgba(255, 255, 255, .48);
+      font-size: 10px;
+    }
+
+    .footer-bottom a {
+      color: rgba(255, 255, 255, .7);
+    }
+
+    /* =========================================
+       MOBILE FIXED CTA BAR
+    ========================================== */
+
+    .mobile-cta {
+      display: none;
+    }
+
+    /* =========================================
+       REVEAL ANIMATIONS
+    ========================================== */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    /* =========================================
+       RESPONSIVE HEADER AND MOBILE LAYOUT
+    ========================================== */
+
+    @media (max-width: 1050px) {
+      .header-inner {
+        gap: 16px;
+      }
+
+      .primary-nav {
+        gap: 15px;
+      }
+
+      .primary-nav a {
+        font-size: 11px;
+      }
+
+      .header-phone {
+        display: none;
+      }
+
+      .hero-grid {
+        gap: 35px;
+      }
+
+      .experience-grid,
+      .technology-grid,
+      .team-grid {
+        gap: 50px;
+      }
+    }
+
+    @media (max-width: 860px) {
+      :root {
+        --header-height: 70px;
+      }
+
+      html {
+        scroll-padding-top: 125px;
+      }
+
+      .container {
+        width: min(100% - 36px, var(--container));
+      }
+
+      .header-inner {
+        min-height: var(--header-height);
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .header-actions .button {
+        display: none;
+      }
+
+      /*
+        The nav is absolutely positioned relative to the
+        complete sticky header shell. top:100% places it
+        immediately beneath the announcement + main header.
+      */
+      .primary-nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        z-index: 1001;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        max-height: calc(100vh - 120px);
+        padding: 8px 24px 22px;
+        overflow-y: auto;
+        background: var(--white);
+        border-top: 1px solid var(--line);
+        box-shadow: 0 20px 30px rgba(36, 44, 40, .12);
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-8px);
+        transition: opacity .2s ease, transform .2s ease, visibility .2s ease;
+      }
+
+      .primary-nav.is-open {
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+
+      .primary-nav a {
+        padding: 14px 0;
+        border-bottom: 1px solid var(--line);
+        font-size: 14px;
+      }
+
+      .primary-nav a::after {
+        display: none;
+      }
+
+      .header-shell {
+        isolation: isolate;
+      }
+
+      .hero {
+        min-height: unset;
+        padding: 65px 0;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero-photo {
+        height: 390px;
+      }
+
+      .hero-visual {
+        min-height: 410px;
+      }
+
+      .hero-stamp {
+        right: -5px;
+        width: 115px;
+        height: 115px;
+      }
+
+      .hero-floating-note {
+        left: -8px;
+      }
+
+      .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 22px;
+      }
+
+      .experience-grid,
+      .technology-grid,
+      .team-grid,
+      .faq-layout,
+      .visit-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .experience-grid,
+      .technology-grid,
+      .team-grid {
+        gap: 45px;
+      }
+
+      .experience-visual {
+        max-width: 600px;
+      }
+
+      .technology-visual {
+        min-height: 350px;
+      }
+
+      .technology-visual img {
+        height: 350px;
+      }
+
+      .care-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .treatment-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .journey-steps {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+      }
+
+      .faq-layout {
+        gap: 35px;
+      }
+
+      .team-photo {
+        height: 390px;
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      :root {
+        --header-height: 64px;
+      }
+
+      html {
+        scroll-padding-top: 115px;
+      }
+
+      body {
+        padding-bottom: 68px;
+      }
+
+      .container {
+        width: calc(100% - 36px);
+      }
+
+      .section {
+        padding: 72px 0;
+      }
+
+      .announcement {
+        min-height: 32px;
+        padding-inline: 10px;
+        font-size: 9px;
+      }
+
+      .brand-symbol {
+        width: 38px;
+        height: 38px;
+        font-size: 22px;
+      }
+
+      .brand-name {
+        font-size: 12px;
+      }
+
+      .brand-subtitle {
+        font-size: 8px;
+      }
+
+      .hero {
+        padding: 52px 0 60px;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .hero h1 {
+        font-size: clamp(43px, 13vw, 61px);
+      }
+
+      .hero-description {
+        font-size: 14px;
+      }
+
+      .hero-actions {
+        align-items: stretch;
+      }
+
+      .hero-actions .button {
+        width: 100%;
+      }
+
+      .hero-visual {
+        min-height: 370px;
+      }
+
+      .hero-photo {
+        width: 86%;
+        height: 350px;
+      }
+
+      .hero-stamp {
+        right: 0;
+        bottom: 0;
+        width: 105px;
+        height: 105px;
+        border-width: 6px;
+      }
+
+      .hero-floating-note {
+        bottom: 35px;
+        left: 0;
+        max-width: 160px;
+        padding: 13px;
+      }
+
+      .hero-floating-note strong {
+        font-size: 12px;
+      }
+
+      .hero-floating-note span {
+        font-size: 9px;
+      }
+
+      .trust-grid {
+        gap: 20px 10px;
+      }
+
+      .trust-item {
+        justify-content: flex-start;
+        gap: 9px;
+      }
+
+      .trust-icon {
+        width: 31px;
+        height: 31px;
+        flex-basis: 31px;
+        font-size: 14px;
+      }
+
+      .trust-item > div strong {
+        font-size: 10px;
+      }
+
+      .trust-item > div span {
+        font-size: 9px;
+      }
+
+      .experience-visual {
+        min-height: 380px;
+      }
+
+      .experience-main-image {
+        height: 360px;
+      }
+
+      .experience-small-image {
+        height: 165px;
+        border-width: 6px;
+      }
+
+      .experience-number {
+        top: 15px;
+        font-size: 60px;
+      }
+
+      .experience-copy h2,
+      .technology h2,
+      .team-copy h2,
+      .visit-copy h2,
+      .faq-heading h2 {
+        font-size: 39px;
+      }
+
+      .technology-grid {
+        gap: 35px;
+      }
+
+      .technology-visual {
+        min-height: 280px;
+      }
+
+      .technology-visual img {
+        height: 280px;
+      }
+
+      .technology-label {
+        right: 0;
+        bottom: -18px;
+        max-width: 185px;
+        padding: 15px;
+      }
+
+      .care-grid {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 40px;
+      }
+
+      .care-item {
+        min-height: 205px;
+        padding: 20px 15px;
+      }
+
+      .care-icon {
+        width: 37px;
+        height: 37px;
+        margin-bottom: 16px;
+      }
+
+      .care-item h3 {
+        font-size: 14px;
+      }
+
+      .care-item p {
+        font-size: 11px;
+      }
+
+      .treatment-grid {
+        grid-template-columns: 1fr;
+        gap: 13px;
+        margin-top: 38px;
+      }
+
+      .treatment-card {
+        min-height: 245px;
+        padding: 25px;
+      }
+
+      .treatment-index {
+        margin-bottom: 22px;
+      }
+
+      .journey-steps {
+        grid-template-columns: 1fr 1fr;
+        gap: 28px 17px;
+        margin-top: 40px;
+      }
+
+      .journey-step h3 {
+        font-size: 15px;
+      }
+
+      .journey-step p {
+        font-size: 11px;
+      }
+
+      .journey-step-number {
+        width: 39px;
+        height: 39px;
+        margin-bottom: 17px;
+      }
+
+      .team-photo {
+        height: 300px;
+      }
+
+      .team-proof {
+        gap: 10px;
+      }
+
+      .team-proof-item {
+        padding: 15px;
+      }
+
+      .team-proof-item strong {
+        font-size: 24px;
+      }
+
+      .consultation {
+        padding: 72px 0;
+      }
+
+      .consultation h2 {
+        font-size: 39px;
+      }
+
+      .faq-layout {
+        gap: 30px;
+      }
+
+      .faq-question {
+        gap: 15px;
+        font-size: 12px;
+      }
+
+      .visit-grid {
+        gap: 35px;
+      }
+
+      .map-panel,
+      .map-panel iframe {
+        min-height: 330px;
+      }
+
+      .final-cta {
+        padding: 55px 0;
+      }
+
+      .final-cta-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .final-cta h2 {
+        font-size: 33px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 20px;
+      }
+
+      .footer-brand {
+        grid-column: 1 / -1;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        font-size: 9px;
+      }
+
+      .mobile-cta {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1100;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+        background: var(--white);
+        border-top: 1px solid var(--line);
+        box-shadow: 0 -7px 25px rgba(36, 44, 40, .09);
+      }
+
+      .mobile-cta a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 46px;
+        border-radius: 4px;
+        font-size: 11px;
+        font-weight: 800;
+      }
+
+      .mobile-cta .mobile-call {
+        background: var(--cream);
+        color: var(--ink);
+        border: 1px solid var(--line);
+      }
+
+      .mobile-cta .mobile-book {
+        background: var(--coral);
+        color: var(--white);
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "London Orthodontic Clinic",
+    "url": "https://www.londonorthodonticclinic.com/",
+    "telephone": "+442045385588",
+    "email": "hello@londonorthodonticclinic.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ground floor, Canaletto Tower, 257 City Road",
+      "addressLocality": "London",
+      "postalCode": "EC1V 1AD",
+      "addressCountry": "GB"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+        "opens": "08:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Friday",
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "15:00"
+      }
+    ],
+    "medicalSpecialty": "Orthodontics"
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- COMPLETE STICKY HEADER WRAPPER -->
+  <div class="header-shell" id="headerShell">
+
+    <div class="announcement">
+      Your smile journey starts here.
+      <a href="#consultation">Book a consultation</a>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+
+        <a class="brand" href="#home" aria-label="London Orthodontic Clinic homepage">
+          <span class="brand-symbol">L</span>
+          <span>
+            <span class="brand-name">London Orthodontic</span>
+            <span class="brand-subtitle">Clinic · Invisalign Experience Studio</span>
+          </span>
+        </a>
+
+        <nav class="primary-nav" id="primaryNav" aria-label="Main navigation">
+          <a href="#experience">The Clinic</a>
+          <a href="#treatments">Treatments</a>
+          <a href="#technology">Technology</a>
+          <a href="#team">Our Team</a>
+          <a href="#journey">Your Journey</a>
+          <a href="#visit">Find Us</a>
+          <a href="#faq">FAQs</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="header-phone" href="tel:+442045385588">020 4538 5588</a>
+          <a class="button" href="https://www.londonorthodonticclinic.com/the-clinic/contact">
+            Book a visit <span class="arrow">↗</span>
+          </a>
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-controls="primaryNav"
+            aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+      </div>
+    </header>
+  </div>
+  <!-- END COMPLETE STICKY HEADER -->
+
+
+  <main id="home">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-copy reveal">
+          <p class="eyebrow">London Orthodontic Clinic</p>
+
+          <h1>
+            A smile that feels
+            <span class="accent">like you.</span>
+          </h1>
+
+          <p class="hero-description">
+            Discover a more considered approach to teeth straightening.
+            Explore Invisalign treatment with an experienced orthodontic
+            team in our Central London Experience Studio.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button" href="https://www.londonorthodonticclinic.com/the-clinic/contact">
+              Begin your smile journey <span class="arrow">↗</span>
+            </a>
+            <a class="button button-outline" href="#treatments">
+              Explore treatments
+            </a>
+          </div>
+
+          <div class="hero-note">
+            <span class="hero-note-mark">✓</span>
+            <span>Personalised orthodontic care in Central London</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-photo">
+            <img
+              src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=1100&q=85"
+              alt="Woman smiling naturally"
+              fetchpriority="high">
+          </div>
+
+          <div class="hero-floating-note">
+            <strong>Your smile. Your plan.</strong>
+            <span>Care shaped around you.</span>
+          </div>
+
+          <div class="hero-stamp">
+            <div>
+              <strong>10k+</strong>
+              <span>Smiles straightened by our team</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- TRUST STRIP -->
+    <section class="trust-strip" aria-label="Clinic highlights">
+      <div class="container trust-grid">
+
+        <div class="trust-item">
+          <span class="trust-icon">✧</span>
+          <div>
+            <strong>Invisalign focused</strong>
+            <span>Dedicated orthodontic care</span>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <span class="trust-icon">◎</span>
+          <div>
+            <strong>Experienced team</strong>
+            <span>Specialist-led experience</span>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <span class="trust-icon">⌖</span>
+          <div>
+            <strong>Central London</strong>
+            <span>257 City Road</span>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <span class="trust-icon">♡</span>
+          <div>
+            <strong>Patient-centred</strong>
+            <span>Care built around you</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- THE CLINIC -->
+    <section class="section experience" id="experience">
+      <div class="container experience-grid">
+
+        <div class="experience-visual reveal">
+          <div class="experience-main-image">
+            <img
+              src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1000&q=85"
+              alt="Modern dental clinic environment"
+              loading="lazy">
+          </div>
+
+          <div class="experience-number">01</div>
+
+          <div class="experience-small-image">
+            <img
+              src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=700&q=85"
+              alt="Dental care equipment"
+              loading="lazy">
+          </div>
+        </div>
+
+        <div class="experience-copy reveal">
+          <p class="eyebrow">A different kind of clinic</p>
+
+          <h2>
+            Orthodontics,
+            with a more
+            <span class="accent">personal touch.</span>
+          </h2>
+
+          <p>
+            Your smile is individual. Your orthodontic experience should be too.
+            At London Orthodontic Clinic, we bring together an experienced
+            team and a dedicated Invisalign environment to help you explore
+            your options with confidence.
+          </p>
+
+          <p>
+            From your first conversation to your ongoing appointments,
+            our focus is on making your treatment journey clear,
+            comfortable and personal.
+          </p>
+
+          <ul class="feature-list">
+            <li>A dedicated orthodontic and Invisalign-focused environment</li>
+            <li>Personalised treatment discussions</li>
+            <li>An experienced and welcoming team</li>
+            <li>A convenient Central London location</li>
+          </ul>
+
+          <a class="button button-dark" href="https://www.londonorthodonticclinic.com/the-clinic/our-team">
+            Discover the clinic <span class="arrow">↗</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- TECHNOLOGY -->
+    <section class="section technology" id="technology">
+      <div class="container technology-grid">
+
+        <div class="reveal">
+          <p class="eyebrow">A more considered approach</p>
+
+          <h2>
+            See the possibilities.
+            Understand your
+            <span class="accent">next step.</span>
+          </h2>
+
+          <p>
+            Modern orthodontic technology can help make your treatment
+            experience more informed. Digital tools and personalised
+            treatment planning support conversations about your smile
+            and the options available to you.
+          </p>
+
+          <p>
+            Your clinician will explain the process and discuss what
+            is appropriate for your individual needs.
+          </p>
+
+          <a class="button" href="https://www.londonorthodonticclinic.com/the-clinic/contact">
+            Ask us about treatment <span class="arrow">↗</span>
+          </a>
+        </div>
+
+        <div class="technology-visual reveal">
+          <img
+            src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1100&q=85"
+            alt="Modern dental treatment environment"
+            loading="lazy">
+
+          <div class="technology-label">
+            <strong>Technology meets personal care.</strong>
+            <span>Information and guidance at every step.</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SIX ICON CARE GRID -->
+    <section class="section care-section">
+      <div class="container">
+
+        <div class="text-center reveal">
+          <p class="eyebrow">The experience</p>
+          <h2 class="section-heading">
+            Thoughtful care at
+            <span class="accent">every stage.</span>
+          </h2>
+          <p class="section-intro">
+            From the first conversation to the finishing touches,
+            your experience should feel clear, supportive and personal.
+          </p>
+        </div>
+
+        <div class="care-grid">
+
+          <article class="care-item reveal">
+            <div class="care-icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <circle cx="20" cy="20" r="12"></circle>
+                <path d="m29 29 10 10"></path>
+                <path d="M14 20h12M20 14v12"></path>
+              </svg>
+            </div>
+            <h3>Understand your smile</h3>
+            <p>Start with a conversation about your concerns, goals and expectations.</p>
+          </article>
+
+          <article class="care-item reveal">
+            <div class="care-icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <rect x="8" y="8" width="32" height="32" rx="5"></rect>
+                <path d="M16 18h16M16 25h16M16 32h9"></path>
+              </svg>
+            </div>
+            <h3>Personalised planning</h3>
+            <p>Explore suitable treatment options with guidance from your clinical team.</p>
+          </article>
+
+          <article class="care-item reveal">
+            <div class="care-icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M24 5 39 13v12c0 10-7 15-15 18C16 40 9 35 9 25V13z"></path>
+                <path d="m17 24 5 5 10-11"></path>
+              </svg>
+            </div>
+            <h3>Support throughout</h3>
+            <p>Know where you are in your journey and who to contact with questions.</p>
+          </article>
+
+          <article class="care-item reveal">
+            <div class="care-icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M7 24c5-9 11-13 17-13s12 4 17 13c-5 9-11 13-17 13S12 33 7 24z"></path>
+                <circle cx="24" cy="24" r="6"></circle>
+              </svg>
+            </div>
+            <h3>Clear communication</h3>
+            <p>Understand your treatment discussions, appointments and next steps.</p>
+          </article>
+
+          <article class="care-item reveal">
+            <div class="care-icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M24 6v36M6 24h36"></path>
+                <circle cx="24" cy="24" r="16"></circle>
+                <path d="m17 24 5 5 10-11"></path>
+              </svg>
+            </div>
+            <h3>Convenient location</h3>
+            <p>Visit our Central London clinic on City Road, near Angel and Old Street.</p>
+          </article>
+
+          <article class="care-item reveal">
+            <div class="care-icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M24 40S7 30 7 17a9 9 0 0 1 17-4 9 9 0 0 1 17 4c0 13-17 23-17 23z"></path>
+                <path d="M16 24h5l3-6 4 12 3-6h4"></path>
+              </svg>
+            </div>
+            <h3>Care that continues</h3>
+            <p>Discuss aftercare and retainers as part of your longer-term smile journey.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- TREATMENTS -->
+    <section class="section treatments" id="treatments">
+      <div class="container">
+
+        <div class="text-center reveal">
+          <p class="eyebrow">Explore your options</p>
+          <h2 class="section-heading">
+            Your smile journey
+            <span class="accent">starts with a choice.</span>
+          </h2>
+          <p class="section-intro">
+            Discover the different parts of an Invisalign-focused
+            orthodontic journey. Your clinician can explain which
+            options are suitable for your needs.
+          </p>
+        </div>
+
+        <div class="treatment-grid">
+
+          <article class="treatment-card reveal">
+            <span class="treatment-index">01</span>
+            <h3>Invisalign treatment</h3>
+            <p>
+              Explore clear aligner treatment designed to move teeth
+              gradually using a series of removable aligners.
+            </p>
+            <a class="treatment-link" href="https://www.londonorthodonticclinic.com/">
+              Discover Invisalign <span>↗</span>
+            </a>
+          </article>
+
+          <article class="treatment-card reveal">
+            <span class="treatment-index">02</span>
+            <h3>Smile assessment</h3>
+            <p>
+              Discuss your smile goals, concerns and potential
+              treatment options with the clinic team.
+            </p>
+            <a class="treatment-link" href="https://www.londonorthodonticclinic.com/the-clinic/contact">
+              Arrange a consultation <span>↗</span>
+            </a>
+          </article>
+
+          <article class="treatment-card reveal">
+            <span class="treatment-index">03</span>
+            <h3>Digital treatment planning</h3>
+            <p>
+              Learn how digital tools can support your treatment
+              discussions and help explain your options.
+            </p>
+            <a class="treatment-link" href="#technology">
+              Explore the approach <span>↗</span>
+            </a>
+          </article>
+
+          <article class="treatment-card reveal">
+            <span class="treatment-index">04</span>
+            <h3>Adult orthodontics</h3>
+            <p>
+              Find out how orthodontic treatment may fit into
+              your lifestyle, work and everyday routine.
+            </p>
+            <a class="treatment-link" href="https://www.londonorthodonticclinic.com/">
+              Explore your options <span>↗</span>
+            </a>
+          </article>
+
+          <article class="treatment-card reveal">
+            <span class="treatment-index">05</span>
+            <h3>Retainers and aftercare</h3>
+            <p>
+              Understand the role of retainers and ongoing care
+              in maintaining your orthodontic result.
+            </p>
+            <a class="treatment-link" href="https://www.londonorthodonticclinic.com/">
+              Learn about aftercare <span>↗</span>
+            </a>
+          </article>
+
+          <article class="treatment-card reveal">
+            <span class="treatment-index">06</span>
+            <h3>Invisalign consultation</h3>
+            <p>
+              Take the first step by speaking with the team
+              about your goals and questions.
+            </p>
+            <a class="treatment-link" href="https://www.londonorthodonticclinic.com/the-clinic/contact">
+              Book a visit <span>↗</span>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- PATIENT JOURNEY -->
+    <section class="section journey" id="journey">
+      <div class="container">
+
+        <div class="text-center reveal">
+          <p class="eyebrow">A clear path forward</p>
+          <h2 class="section-heading">
+            Four steps towards
+            <span class="accent">your next chapter.</span>
+          </h2>
+          <p class="section-intro">
+            Every treatment plan is individual. Here is a simple
+            overview of how your journey may begin.
+          </p>
+        </div>
+
+        <div class="journey-steps">
+
+          <article class="journey-step reveal">
+            <span class="journey-step-number">01</span>
+            <h3>Start a conversation</h3>
+            <p>Tell the team what you would like to change and what matters to you.</p>
+          </article>
+
+          <article class="journey-step reveal">
+            <span class="journey-step-number">02</span>
+            <h3>Explore your options</h3>
+            <p>Discuss your smile, clinical needs and the treatment possibilities.</p>
+          </article>
+
+          <article class="journey-step reveal">
+            <span class="journey-step-number">03</span>
+            <h3>Understand your plan</h3>
+            <p>Review the proposed treatment, expected stages and practical details.</p>
+          </article>
+
+          <article class="journey-step reveal">
+            <span class="journey-step-number">04</span>
+            <h3>Begin your journey</h3>
+            <p>Move forward with a plan agreed with your treating clinician.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- TEAM -->
+    <section class="section team-section" id="team">
+      <div class="container team-grid">
+
+        <div class="team-photo reveal">
+          <img
+            src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=1100&q=85"
+            alt="Healthcare professional in a clinical environment"
+            loading="lazy">
+        </div>
+
+        <div class="team-copy reveal">
+          <p class="eyebrow">The people behind your care</p>
+
+          <h2>
+            Experience,
+            collaboration and
+            <span class="accent">a human touch.</span>
+          </h2>
+
+          <p>
+            Great orthodontic care begins with the people who deliver it.
+            London Orthodontic Clinic is supported by an experienced
+            team with a shared focus on patient care and orthodontics.
+          </p>
+
+          <p>
+            The clinic's published team information highlights
+            extensive Invisalign experience, professional recognition
+            and a collaborative approach to treatment.
+          </p>
+
+          <div class="team-proof">
+            <div class="team-proof-item">
+              <strong>24+</strong>
+              <span>Industry awards associated with the wider team</span>
+            </div>
+
+            <div class="team-proof-item">
+              <strong>10,000+</strong>
+              <span>Smiles straightened by the team</span>
+            </div>
+          </div>
+
+          <a class="button button-dark" href="https://www.londonorthodonticclinic.com/the-clinic/our-team">
+            Meet the team <span class="arrow">↗</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CONSULTATION CTA -->
+    <section class="consultation" id="consultation">
+      <div class="container reveal">
+        <p class="eyebrow">Your next step</p>
+
+        <h2>
+          It all starts with
+          one conversation.
+        </h2>
+
+        <p>
+          Have questions about Invisalign or want to understand
+          whether treatment may be right for you? Speak with
+          London Orthodontic Clinic and explore your options.
+        </p>
+
+        <a class="button" href="https://www.londonorthodonticclinic.com/the-clinic/contact">
+          Book your consultation <span class="arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section class="section faq-section" id="faq">
+      <div class="container faq-layout">
+
+        <div class="faq-heading reveal">
+          <p class="eyebrow">Good to know</p>
+
+          <h2>
+            A few things
+            you might
+            <span class="accent">be wondering.</span>
+          </h2>
+
+          <p>
+            Have another question? Contact our team and
+            we'll help you find the information you need.
+          </p>
+
+          <a class="button button-dark" href="https://www.londonorthodonticclinic.com/the-clinic/contact">
+            Ask the clinic <span class="arrow">↗</span>
+          </a>
+        </div>
+
+        <div class="faq-list reveal">
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              Where is London Orthodontic Clinic located?
+              <span class="faq-plus">+</span>
+            </button>
+            <div class="faq-answer">
+              London Orthodontic Clinic is located on the ground floor
+              of Canaletto Tower, 257 City Road, London, EC1V 1AD.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              What does the clinic specialise in?
+              <span class="faq-plus">+</span>
+            </button>
+            <div class="faq-answer">
+              The clinic is focused on orthodontic care and Invisalign
+              treatment. Contact the team to discuss your individual
+              needs and suitable treatment options.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              How do I arrange a consultation?
+              <span class="faq-plus">+</span>
+            </button>
+            <div class="faq-answer">
+              You can contact the clinic by telephone on 020 4538 5588
+              or use the clinic's online contact and booking page.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              What are the clinic's opening hours?
+              <span class="faq-plus">+</span>
+            </button>
+            <div class="faq-answer">
+              The published hours are Monday to Thursday, 8am–8pm;
+              Friday, 8am–6pm; and Saturday, 9am–3pm.
+              The clinic is closed on Sunday.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              Is the clinic easy to reach by public transport?
+              <span class="faq-plus">+</span>
+            </button>
+            <div class="faq-answer">
+              The clinic is situated on City Road, within walking
+              distance of Angel and Old Street stations. Nearby
+              bus routes also serve the area.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              Can I park at the clinic?
+              <span class="faq-plus">+</span>
+            </button>
+            <div class="faq-answer">
+              The clinic's location information describes on-site
+              parking and step-free access. Contact the team before
+              your visit to confirm the arrangements for your appointment.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              Will Invisalign treatment be suitable for me?
+              <span class="faq-plus">+</span>
+            </button>
+            <div class="faq-answer">
+              Suitability depends on your individual orthodontic needs.
+              A clinical assessment is required before a treatment
+              recommendation can be made.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- VISIT -->
+    <section class="section visit-section" id="visit">
+      <div class="container visit-grid">
+
+        <div class="visit-copy reveal">
+          <p class="eyebrow">Come and see us</p>
+
+          <h2>
+            Find us in
+            <span class="accent">Central London.</span>
+          </h2>
+
+          <p>
+            Visit our Invisalign-focused clinic at Canaletto Tower
+            on City Road. We're conveniently positioned between
+            Angel and Old Street.
+          </p>
+
+          <div class="visit-details">
+
+            <div class="visit-detail">
+              <span class="visit-detail-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path>
+                  <circle cx="12" cy="10" r="2.5"></circle>
+                </svg>
+              </span>
+              <div>
+                <strong>Our address</strong>
+                <span>Ground floor, Canaletto Tower, 257 City Road, London EC1V 1AD</span>
+              </div>
+            </div>
+
+            <div class="visit-detail">
+              <span class="visit-detail-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"></path>
+                </svg>
+              </span>
+              <div>
+                <strong>Call the clinic</strong>
+                <span><a href="tel:+442045385588">020 4538 5588</a></span>
+              </div>
+            </div>
+
+            <div class="visit-detail">
+              <span class="visit-detail-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                  <path d="m3 7 9 6 9-6"></path>
+                </svg>
+              </span>
+              <div>
+                <strong>Email</strong>
+                <span><a href="mailto:hello@londonorthodonticclinic.com">hello@londonorthodonticclinic.com</a></span>
+              </div>
+            </div>
+
+          </div>
+
+          <table class="opening-hours" aria-label="Clinic opening hours">
+            <tbody>
+              <tr>
+                <td>Monday – Thursday</td>
+                <td>8:00am – 8:00pm</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>8:00am – 6:00pm</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>9:00am – 3:00pm</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>Closed</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <a
+            class="button button-dark"
+            style="margin-top:25px"
+            href="https://www.google.com/maps/search/?api=1&query=London+Orthodontic+Clinic+257+City+Road+London+EC1V+1AD"
+            target="_blank"
+            rel="noopener">
+            Get directions <span class="arrow">↗</span>
+          </a>
+        </div>
+
+        <div class="map-panel reveal">
+          <iframe
+            title="Map showing London Orthodontic Clinic at 257 City Road"
+            src="https://maps.google.com/maps?q=257%20City%20Road%2C%20London%20EC1V%201AD&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+
+          <div class="map-caption">
+            <strong>London Orthodontic Clinic</strong>
+            <span>257 City Road · London EC1V 1AD</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+      <div class="container final-cta-inner">
+        <h2>
+          Your smile deserves a plan that's personal to you.
+        </h2>
+
+        <a class="button" href="https://www.londonorthodonticclinic.com/the-clinic/contact">
+          Let's talk about your smile <span class="arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a class="brand" href="#home">
+            <span class="brand-symbol">L</span>
+            <span>
+              <span class="brand-name">London Orthodontic</span>
+              <span class="brand-subtitle">Clinic · Invisalign Experience Studio</span>
+            </span>
+          </a>
+
+          <p>
+            A dedicated orthodontic clinic in Central London,
+            helping patients explore their Invisalign smile journey.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <a href="#experience">The Clinic</a>
+          <a href="#treatments">Treatments</a>
+          <a href="#technology">Technology</a>
+          <a href="#team">Our Team</a>
+          <a href="#journey">Your Journey</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Information</h3>
+          <a href="#faq">FAQs</a>
+          <a href="#visit">Find Us</a>
+          <a href="https://www.londonorthodonticclinic.com/">Official Website</a>
+          <a href="https://www.londonorthodonticclinic.com/the-clinic/contact">Contact</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Get in touch</h3>
+          <p>257 City Road, London EC1V 1AD</p>
+          <a href="tel:+442045385588">020 4538 5588</a>
+          <a href="mailto:hello@londonorthodonticclinic.com">
+            hello@londonorthodonticclinic.com
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&query=257+City+Road+London+EC1V+1AD" target="_blank" rel="noopener">
+            Get directions ↗
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="currentYear"></span> London Orthodontic Clinic. All rights reserved.</span>
+        <span>
+          <a href="https://www.londonorthodonticclinic.com/">Official clinic website</a>
+        </span>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- MOBILE FIXED ACTIONS -->
+  <div class="mobile-cta" aria-label="Quick contact actions">
+    <a class="mobile-call" href="tel:+442045385588">Call the clinic</a>
+    <a class="mobile-book" href="https://www.londonorthodonticclinic.com/the-clinic/contact">
+      Book a consultation
+    </a>
+  </div>
+
+
+  <script>
+    /* =========================================
+       MOBILE NAVIGATION
+    ========================================== */
+
+    const menuToggle = document.getElementById("menuToggle");
+    const primaryNav = document.getElementById("primaryNav");
+    const headerShell = document.getElementById("headerShell");
+
+    function closeMenu() {
+      primaryNav.classList.remove("is-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open navigation menu");
+      document.body.classList.remove("menu-open");
+    }
+
+    function openMenu() {
+      primaryNav.classList.add("is-open");
+      menuToggle.setAttribute("aria-expanded", "true");
+      menuToggle.setAttribute("aria-label", "Close navigation menu");
+      document.body.classList.add("menu-open");
+    }
+
+    menuToggle.addEventListener("click", function () {
+      const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+
+      if (isOpen) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+
+    primaryNav.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", closeMenu);
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        closeMenu();
+      }
+    });
+
+    document.addEventListener("click", function (event) {
+      const clickedInsideHeader = headerShell.contains(event.target);
+
+      if (!clickedInsideHeader && menuToggle.getAttribute("aria-expanded") === "true") {
+        closeMenu();
+      }
+    });
+
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > 860) {
+        closeMenu();
+      }
+    });
+
+
+    /* =========================================
+       FAQ ACCORDION
+    ========================================== */
+
+    const faqQuestions = document.querySelectorAll(".faq-question");
+
+    faqQuestions.forEach(function (question) {
+      question.addEventListener("click", function () {
+        const answer = question.nextElementSibling;
+        const isExpanded = question.getAttribute("aria-expanded") === "true";
+
+        question.setAttribute("aria-expanded", String(!isExpanded));
+        answer.classList.toggle("is-open", !isExpanded);
+      });
+    });
+
+
+    /* =========================================
+       SCROLL REVEAL
+    ========================================== */
+
+    const revealElements = document.querySelectorAll(".reveal");
+
+    if ("IntersectionObserver" in window) {
+      const revealObserver = new IntersectionObserver(
+        function (entries, observer) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.12,
+          rootMargin: "0px 0px -35px 0px"
+        }
+      );
+
+      revealElements.forEach(function (element) {
+        revealObserver.observe(element);
+      });
+    } else {
+      revealElements.forEach(function (element) {
+        element.classList.add("visible");
+      });
+    }
+
+
+    /* =========================================
+       FOOTER YEAR
+    ========================================== */
+
+    document.getElementById("currentYear").textContent =
+      new Date().getFullYear();
+
+
+    /* =========================================
+       HEADER SCROLL STATE
+       The sticky wrapper stays in normal document
+       flow and remains sticky as one complete unit.
+    ========================================== */
+
+    let scrollTicking = false;
+
+    window.addEventListener("scroll", function () {
+      if (!scrollTicking) {
+        window.requestAnimationFrame(function () {
+          if (window.scrollY > 20) {
+            headerShell.classList.add("has-scrolled");
+          } else {
+            headerShell.classList.remove("has-scrolled");
+          }
+
+          scrollTicking = false;
+        });
+
+        scrollTicking = true;
+      }
+    }, { passive: true });
+  </script>
+
+</body>
+</html>
